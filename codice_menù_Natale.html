@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<title>
+			Menù di Natale
+		</title>
+		
+		<style>
+			body {
+				background-color: red;
+				color: white;
+				font-family: Arial, sans-serif;
+				text-align: center;
+			}
+			#menuButton {
+				margin-top: 20px;
+				padding: 10px 20px;
+				font-size: 16px;
+				background-color: white;
+				color: red;
+				border: none;
+				cursor: pointer;
+			}
+			#menuButton:hover {
+				background-color: green;
+				color: white;
+			}
+			.images {
+				margin-top: 20px;
+			}
+			.images img {
+				width: 450px; /* Dimensione delle immagini */
+				margin: 10px;
+				border: 5px solid white; /* Aggiungi il bordo bianco alle immagini */
+			}
+			.menu-section {
+				margin: 20px;
+			}
+			ul {
+				list-style-type: none;
+				padding: 0;
+				text-align: center;
+			}
+			li {
+				margin: 5px 0;
+				text-align: center;
+			}
+		</style>
+		
+		<script>
+		
+			function mostraMenu()
+			{
+				document.body.innerHTML = `
+					<h1>Menù di Natale</h1>
+					
+					<div class="menu-section">
+						<h2>Antipasti</h2>
+						<ul>
+							<li>Antipasti misti ZL</li>
+						</ul>
+					</div>
+					
+					<div class="menu-section">
+						<h2>Primi Piatti</h2>
+						<ul>
+							<li>Pasticcio</li>
+						</ul>
+					</div>
+					
+					<div class="menu-section">
+						<h2>Secondi Piatti</h2>
+						<ul>
+							<li>Arrosto di faraona</li>
+							<li>Musetto</li>
+							<li>Verdura cotta</li>
+							<li>Purè</li>
+						</ul>
+					</div>
+					
+					<div class="menu-section">
+						<h2>Dessert</h2>
+						<ul>
+							<li>Pandoro con crema</li>
+							<li>Palline di cocco</li>
+						</ul>
+					</div>
+					
+					<button onclick="location.reload();">Torna alla home page</button>
+				`;
+			}
+			
+		</script>
+		
+	</head>
+	
+	<body>
+	
+		<h1>Benvenuti</h1>
+		
+		<button id="menuButton" onclick="mostraMenu()">Menù di Natale</button>
+		
+		<div class="images">
+			<img src="pranzo_natale.jpg" alt="Immagine di Natale 1">
+			<img src="babboNatale.jpg" alt="Immagine di Natale 2">
+			<img src="orologio.jpg" alt="Immagine di Natale 3">
+			<img src="agrifoglio.jpeg" alt="Immagine di Natale 4">
+		</div>
+		
+	</body>
+	
+</html>
